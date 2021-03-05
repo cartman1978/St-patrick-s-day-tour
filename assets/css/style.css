@@ -5,3 +5,48 @@ body {
 .navbar-nav .nav-link {
     color: #151222;;
 }
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: 0;
+}
+
+.navbar-toggler.collapsed .close-icon {
+    display: none;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    display: inline;
+}
+
+.navbar.scrolled {
+    background: var(--blue);
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.fa-bars {
+    color: var(--red);
+}
+
+button:focus {
+    outline: none;
+}
+
+.fa-times {
+    color: var(--red);
+    
+}
+
+.navbar-toggler>.close {
+    display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+
+.li-group {
+    display: flex;
+}
