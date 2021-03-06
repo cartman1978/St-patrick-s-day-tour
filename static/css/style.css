@@ -25,12 +25,88 @@ body {
   
 }
 
+.li-group {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+}
+
+.nav-item {
+    position: relative;
+    width: 120px;
+    text-align: center;
+    float: left;
+    margin: 0 10;
+}
+
 .nav-link {
     text-transform: uppercase;
     font-weight: 600; 
     letter-spacing: .2rem;  
 }
 
+.nav-link:hover {
+    color: orange;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    background: deeppink;
+    width: 100%;
+    height: 6px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    animation: 1s forwards ani1 linear;
+    z-index: -1;
+}
+
+.nav-link:hover::before,
+.nav-link:focus::before {
+    animation: .5s forwards ani2 linear;
+}
+
+@keyframes ani2 {
+    0% {
+        transform: scaleX(0);
+        height: 5px;
+    }
+    45% {
+        transform: scaleY(1);
+        height: 5px;
+    }
+    55% {
+        height: 5px;
+    }
+    100% {
+         transform: scaleY(1);
+        height: 40px;
+    }
+}
+
+@keyframes ani1 {
+    0% {
+        transform: scaleX(1);
+        height: 40px;
+    }
+    45% {
+        
+        height: 5px;
+    }
+    55% {
+        transform: scaleX(1);
+        height: 5px;
+        opacity: 1;
+    }
+    100% {
+         transform: scaleY(1);
+        height: 5px;
+        opacity: .02;
+    }
+}
 
  .nav-link ,.navbar-brand{
     color: #fff;
@@ -38,9 +114,9 @@ body {
     padding: 3rem;
 }
 
-a.nav-link:hover {
+/* a.nav-link:hover {
     color: #efefef;
-}
+} */
 
 
 .navbar-toggler:focus, .navbar-toggler:active {
@@ -64,30 +140,6 @@ a.nav-link:hover {
     outline: none;
 }
 
-.line {
-    height: 2px;
-    position: absolute;
-    margin: 10px 0 0 0;
-    background: #efefef;
-}
-
-.nav-item {
-    margin: 0 40px 0 0;
-    opacity: .4;
-    transition: all 0.4s ease;
-}
-
-.nav-item:hover {
-    opacity: .7;
-}
-
-.nav-item.active {
-    opacity: 1;
-}
-
-.nav-item:last-child {
-    margin-right: 0;
-}
 
 .fa-bars {
     color: #efefef;
