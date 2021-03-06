@@ -13,12 +13,14 @@
    font-family: sans-serif;
 }
 
+
 body {
-   display: flex;
+   /* display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: center; */
    min-height: 100vh;
    background-color: rgb(255,246,227);
+   
 }
 
 .navbar {
@@ -149,15 +151,15 @@ button:focus {
   background-size: cover;
     height: auto;
     width: 100%;
-    min-height: 38rem;
-    max-height: 84rem;
-    margin-top: -31rem;
+    min-height: 58rem;
+    max-height: 88rem;
+    margin-top: -21rem;
    
 }
 
 .jumbotron {
     position: absolute;
-    top: 4rem;
+    top: 18rem;
     padding: 0.8rem 1rem;
     margin: 1rem;
     border-radius: 1.2rem;
@@ -165,4 +167,18 @@ button:focus {
     opacity: 0.8;
     justify-content: center;
 }
+
+/* Cards */
+
+h2, h3, p {
+    font-size: 3rem;
+}
+
+.card-outline-primary {
+    border-radius: 3rem;
+    padding: 5rem;
+    width: 	100%;
+}
+
+
 
