@@ -178,6 +178,10 @@ h2, h3, p {
     border-radius: 3rem;
     padding: 5rem;
     width: 	100%;
+    height: 35rem;
+    box-shadow: 7px 7px 7px 0px rgba(255,173,82,0.75);
+-webkit-box-shadow: 7px 7px 7px 0px rgba(255,173,82,0.75);
+-moz-box-shadow: 7px 7px 7px 0px rgba(255,173,82,0.75);
 }
 
 
