@@ -26,6 +26,11 @@ body {
   
 }
 
+#logo {
+    height: 5rem;
+    width: 5rem;
+}
+
 .fa-home, .fa-user, .fa-bus, .fa-glass-whiskey {
     font-size: 1.8rem;
     
