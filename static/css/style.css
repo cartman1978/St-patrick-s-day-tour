@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 
 :root {
@@ -18,7 +18,7 @@ body {
    align-items: center;
    justify-content: center;
    min-height: 100vh;
-    background-color: rgb(255,246,227);
+   background-color: rgb(255,246,227);
 }
 
 .navbar {
@@ -26,9 +26,18 @@ body {
   
 }
 
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    color: #fff;
+    font-size: 2.8rem;
+    padding: 3rem;
+}
+
 #logo {
     height: 5rem;
     width: 5rem;
+    border-radius: 50%;
+     box-shadow: 0px 0px 0px 5px #FFAD52;
 }
 
 .fa-home, .fa-user, .fa-bus, .fa-glass-whiskey {
@@ -72,14 +81,13 @@ body {
     
 }
 
-
- .nav-link ,.navbar-brand{
+ .nav-link {
     color: #fff;
     font-size: 1.8rem;
     padding: 3rem;
 }
 
-a.nav-link:hover {
+a.nav-link, .navbar-brand:hover {
     color: #efefef;
 }
 
@@ -130,3 +138,31 @@ button:focus {
 .li-group {
     display: flex;
 }
+
+/* Hero img */
+
+.hero {
+   position: relative;
+}
+
+.hero .hero-img {
+  background-size: cover;
+    height: auto;
+    width: 100%;
+    min-height: 38rem;
+    max-height: 84rem;
+    margin-top: -31rem;
+   
+}
+
+.jumbotron {
+    position: absolute;
+    top: 4rem;
+    padding: 0.8rem 1rem;
+    margin: 1rem;
+    border-radius: 1.2rem;
+    background: rgba(238, 227, 227, 0.8);
+    opacity: 0.8;
+    justify-content: center;
+}
+
