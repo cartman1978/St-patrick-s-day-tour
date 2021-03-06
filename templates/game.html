@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="margin-top: 200px;">
+
+    <!-- flash messages -->
+    <section>
+        {% with messages = get_flashed_messages() %}
+        <!-- in case there is more than one message, iterate -->
+        {% if messages %}
+        {% for message in messages %}
+        <div class="row flashes">
+            <h4 class="light-blue lighten-4 center-align">{{ message }}</h4>
+        </div>
+        {% endfor%}
+        {% endif %}
+        {% endwith %}
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <h3>Drinks for the Champ</h3>
+    <br>
+    <br>
+
+    <!-- enter participant name -->
+    <section>
+        <form method="POST" action="{{ url_for('add_player') }}">
+            <h6>New participant? Enter your name here :</h6>
+            <input type="text" name="input_new_player" id="input_new_player" placeholder="Participant's name">
+            <input type="number" name="input_n_drinks" id="input_n_drinks" placeholder="number of beers" min="0"
+                max="1000">
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+    <!-- Load all participants and the number of drinks -->
+    <br>
+    <br>
+    <br>
+
+    <h5>current rank</h5>
+    <section>
+        <form>
+            {% for player in players_list %}
+            <br>
+            <br>
+
+            <input type="text" id="name_rank" name="name_rank" value="{{ player.name }}" readonly>
+            <input id="n_drinks_rank" name="n_drinks_rank" type="number" value="{{player.n_drinks}}" min="0" max="1000">
+            <button type="submit" formmethod="POST"
+                formaction="{{ url_for('rank_update_refresh', player_id=player._id)}}">save</button>
+
+            <a href="{{ url_for('delete_player', player_id=player._id)}}">Delete</a>
+            <br>
+
+            {% endfor %}
+        </form>
+    </section>
+</div>
+{% endblock %}
