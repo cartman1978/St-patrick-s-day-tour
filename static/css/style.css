@@ -7,16 +7,28 @@
 
 * {
    box-sizing: border-box;
-   display: flex;
-   align-items: center;
-   justify-content: center;
    margin: 0;
    padding: 0;
    font-size: 62.5%;
 }
 
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+    background-color: rgb(255,246,227);
+}
+
 .navbar {
   background-color: #009C5E;
+  
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 600; 
+    letter-spacing: .2rem;  
 }
 
 
@@ -52,8 +64,34 @@ a.nav-link:hover {
     outline: none;
 }
 
+.line {
+    height: 2px;
+    position: absolute;
+    margin: 10px 0 0 0;
+    background: #efefef;
+}
+
+.nav-item {
+    margin: 0 40px 0 0;
+    opacity: .4;
+    transition: all 0.4s ease;
+}
+
+.nav-item:hover {
+    opacity: .7;
+}
+
+.nav-item.active {
+    opacity: 1;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
 .fa-bars {
-    color: var(--red);
+    color: #efefef;
+    font-size: 1.8rem;
 }
 
 button:focus {
@@ -61,8 +99,8 @@ button:focus {
 }
 
 .fa-times {
-    color: var(--red);
-    
+    color: #efefef;
+    font-size: 1.8rem;
 }
 
 .navbar-toggler>.close {
