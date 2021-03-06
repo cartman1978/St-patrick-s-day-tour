@@ -10,6 +10,7 @@
    margin: 0;
    padding: 0;
    font-size: 62.5%;
+   font-family: sans-serif;
 }
 
 body {
@@ -25,14 +26,45 @@ body {
   
 }
 
+.fa-home, .fa-user, .fa-bus, .fa-glass-whiskey {
+    font-size: 1.8rem;
+    
+}
 
 
+.li-group .nav-link {
+    position: relative;
+    display: block;
+    padding: 20px 0;
+    transition: all 0.3 ease;
+}
+
+.li-group .nav-link:hover {
+    color: #FFAD52;
+}
+
+.li-group .nav-link::before {
+      content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: #e74c3c
+}
+
+.li-group .nav-link:hover::before {
+    right: 0;
+    left: 0;
+}
 
 
 .nav-link {
     text-transform: uppercase;
     font-weight: 600; 
     letter-spacing: .2rem;  
+    
 }
 
 
