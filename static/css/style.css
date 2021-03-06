@@ -154,7 +154,7 @@ button:focus {
 /* Cards */
 
 .tour {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 5rem;
     margin-top: 10rem;
 }
@@ -232,7 +232,7 @@ h3 {
 }
 
 .tour {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .card-outline-primary {
