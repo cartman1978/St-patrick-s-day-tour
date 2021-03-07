@@ -163,6 +163,10 @@ button:focus {
     text-shadow: -2px -2px 0 #FFAD52, 2px -2px 0 #FFAD52, -2px 2px 0 #FFAD52, 2px 2px 0 #FFAD52, -3px 0 0 #FFAD52, 3px 0 0 #FFAD52, 0 -3px 0 #FFAD52, 0 3px 0 #FFAD52;
 }
 
+#sharmrock {
+    height: 3.2rem;
+}
+
  h3, p {
     font-size: 1rem;
 }
@@ -239,7 +243,6 @@ h3 {
     font-size: 1.6rem;
     
 }
-}
 
 .card-outline-primary {
     padding: 1rem;
@@ -257,7 +260,12 @@ h3 {
     margin-top: 0.2rem;
 }
 
+
 }
+
+
+
+
 
 @media (max-width: 1024px) {
 .card-img {
