@@ -1,4 +1,55 @@
 {% extends "base.html" %}
+{% block title %}
+<title>St Patrick's day Tour</title>
+{% endblock %}
+{% block head %}
+<!-- add html page specific <head> material here -->
+{% endblock %}
 {% block content %}
-<!-- Code from index page should be written here -->
+    <!-- Hero image -->
+    <div class="hero">
+        <img class="hero-img" src="static/images/hero.jpg" alt="paddys">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1> The Parade</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Cards -->
+    <h2 id="tours" class="tour text-center">Get your Tour <img id="sharmrock" src="static/images/shamrock .png" alt="sharmrock">
+    </h2>
+    <div class="container-fluid">
+        <div class="row equal">
+            <div class="col-sm-4 d-flex pb-3">
+                <div class="card card-outline-primary">
+                    <img class="card-img" src="static/images/dublin.jpg" alt="Dublin">
+                    <div class="card-block text-center">
+                        <h3 class="card-title text-center mb-5">Dublin</h3>
+                        <button class="btn">Description</button>
+                        <button class="btn-1">Book</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex pb-3">
+                <div class="card card-outline-primary">
+                    <img class="card-img" src="static/images/galway.jpg" alt="Galway">
+                    <div class="card-block text-center">
+                        <h3 class="card-title text-center mb-5">Galway</h3>
+                        <button class="btn">Description</button>
+                        <button class="btn-1">Book</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex pb-3 mb-5">
+                <div class="card card-outline-primary">
+                    <img class="card-img" src="static/images/cork.jpg" alt="Cork">
+                    <div class="card-block text-center">
+                        <h3 class="card-title text-center mb-5">Cork</h3>
+                        <button class="btn">Description</button>
+                        <button class="btn-1">Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
