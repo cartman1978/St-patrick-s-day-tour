@@ -2,6 +2,8 @@ $(window).scroll(function () {
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 200);
 });
 
+
+
 //set my map view
 const map = L.map('mapid').setView([51.89797, -8.47061], 13);
 
