@@ -20,7 +20,7 @@ map.on('click', onMapClick);
 
 //set my icon marker
 const myIcon = L.icon({
-    iconUrl: 'img/Saint-Patrick.png',
+    iconUrl: 'static/images/Saint-Patrick.png',
     iconSize: [38, 40], // size of the icon
     iconAnchor: [22, 38], // point of the icon which will correspond to marker's location
     popupAnchor: [-3, -26], // point from which the popup should open relative to the iconAnchor
