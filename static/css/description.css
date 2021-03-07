@@ -28,6 +28,11 @@
     margin: 4rem;
 }
 
+#mapid { 
+
+    height: 180px;
+ }
+
 @media (max-width: 768px) {
    .side-img {
        width: 100%;
