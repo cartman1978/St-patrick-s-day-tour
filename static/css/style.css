@@ -192,7 +192,9 @@ h3 {
 }
 
 .card-title {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color: #009C5E;
+     text-shadow: -1px -1px 0 #FFAD52, 1px -1px 0 #FFAD52, -1px 1px 0 #FFAD52, 1px 1px 0 #FFAD52, -2px 0 0 #FFAD52, 2px 0 0 #FFAD52, 0 -2px 0 #FFAD52, 0 2px 0 #FFAD52;
 }
 
 .btn, .btn-1 {
