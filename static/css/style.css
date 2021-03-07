@@ -198,11 +198,17 @@ h3 {
 .btn, .btn-1 {
     
     font-size: 0.9rem;
+    font-weight: 700;
     padding: 1rem;
     background-color: #FFD06C;
     border-radius: 2rem;
     border: 1px solid #009C5E;
-    width: 6rem;
+    width: 9rem;
+}
+
+.btn:hover, .btn-1:hover {
+   background-color: #FFAD52;
+   color: #fff;
 }
 
 .btn-1 {
