@@ -43,7 +43,7 @@
 }
 
 .li-group .nav-link::before {
-      content: "";
+  content: "";
   transition: all 0.4s ease-in-out;
   position: absolute;
   right: 50%;
