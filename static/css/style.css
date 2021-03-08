@@ -128,7 +128,7 @@ button:focus {
 
 /* Hero img */
 
-/* .hero {
+.hero {
    position: relative;
 }
 
@@ -151,10 +151,10 @@ button:focus {
     background: rgba(238, 227, 227, 0.8);
     opacity: 0.8;
     justify-content: center;
-} */
+}
 
 /* style hero image with particlesJS */
-​
+/* ​
 .hero {
     position: relative;
     margin-top: 4.5rem;
@@ -162,13 +162,13 @@ button:focus {
 ​
 #particles-js {
     width: 100%;
-    background-image: url("../images/hero.jpg");
+    background-image: url("../images/disney-clipart-14.png");
     background-size: cover;
 }
 ​
 .particles-js-canvas-el {
     max-height: 25rem;
-}
+} */
 
 /* Cards */
 
