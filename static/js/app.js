@@ -1,18 +1,18 @@
 
 let img_src = [
-    'disney-clipart-2.png',
-    'disney-clipart-14.png',
-    'disney-clipart-3.gif',
-    'leprechaun.png',
-    'Leprechaun_with_Beer.png',
-    'saint-patricks-day-mickey.png'
+    'static/images/disney-clipart-2.png',
+    'static/images/disney-clipart-14.png',
+    'static/images/disney-clipart-3.gif',
+    'static/images/leprechaun.png',
+    'static/images/Leprechaun_with_Beer.png',
+    'static/images/saint-patricks-day-mickey.png'
 ];
 
 // Name images included
 let image_type = img_src.map(function(cuurentEl, index) { return "image" + index });
 
 // Configure particles-js
-pJS('particles-js', {
+particlesJS('particles-js', {
     "particles": {
         "number": {
             "value": 80, // No of images
