@@ -128,7 +128,7 @@ button:focus {
 
 /* Hero img */
 
-.hero {
+/* .hero {
    position: relative;
 }
 
@@ -151,6 +151,23 @@ button:focus {
     background: rgba(238, 227, 227, 0.8);
     opacity: 0.8;
     justify-content: center;
+} */
+
+/* style hero image with particlesJS */
+​
+.hero {
+    position: relative;
+    margin-top: 4.5rem;
+}
+​
+#particles-js {
+    width: 100%;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+}
+​
+.particles-js-canvas-el {
+    max-height: 25rem;
 }
 
 /* Cards */
@@ -273,6 +290,11 @@ h3 {
     width: 9rem;
     margin-top: 0.2rem;
 }
+
+.particles-js-canvas-el {
+        max-height: 30rem;
+    }
+
 
 
 }
