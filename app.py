@@ -82,6 +82,10 @@ def dublin_tour():
 def cork_tour():
     return render_template("cork_tour.html")
 
+@app.route('/galway_tour')
+def galway_tour():
+    return render_template("galway_tour.html")
+
 # -------------- END Tours Python -----------------------
 
 if __name__ == "__main__":
