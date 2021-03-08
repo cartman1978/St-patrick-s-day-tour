@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}
+<title>
+  Galway Tour
+</title>
+{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/streetView.css') }}">
+{% endblock %}
+{% block content %}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">St Patrick's day in Galway</h1>
+    </div>
+
+    <div id="street-view" class="col-auto mx-auto mt-4"></div>
+  </div>
+  <div class="row py-4">
+    <div class="col-auto mx-auto" id="street-view-navigation">
+      <button id="map-nav-first" type="button" class="btn btn-sm"><i class="fas fa-fast-backward"></i>First</button>
+      <button id="map-nav-previous" type="button" class="btn btn-sm"><i
+          class="fas fa-step-backward"></i>Previous</button>
+      <button id="map-nav-next" type="button" class="btn btn-sm"><i class="fas fa-step-forward"></i>Next</button>
+      <button id="map-nav-last" type="button" class="btn btn-sm"><i class="fas fa-fast-forward"></i>Last</button>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB83vz0asy8DKz2p_DVXg4UMMhRm02NNVE">
+</script>
+<script async defer src="{{ url_for('static', filename='js/streetView.js') }}"></script>
+{% endblock %}
