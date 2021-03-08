@@ -326,3 +326,50 @@ h3 {
     margin-top: 2rem;
     min-height: 25rem;
 }
+
+/* Cork */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+#des-title {
+    margin: 8rem;
+    text-align: center;
+}
+
+.side-img {
+    background-size: cover;
+    width: 70%;
+    margin: 2rem;
+    
+}
+
+.img-thumbnail:hover {
+     background-color: #FFAD52 !important;
+    opacity: 1 !important;
+}
+
+
+.main-title {
+    font-size: 2.5rem;
+    color: #009C5E;
+    text-shadow: -2px -2px 0 #FFAD52, 2px -2px 0 #FFAD52, -2px 2px 0 #FFAD52, 2px 2px 0 #FFAD52, -3px 0 0 #FFAD52, 3px 0 0 #FFAD52, 0 -3px 0 #FFAD52, 0 3px 0 #FFAD52;
+}
+
+.par-description {
+    margin: 4rem;
+}
+
+#mapid { 
+
+    height: 180px;
+ }
+
+@media (max-width: 768px) {
+   .side-img {
+       width: 100%;
+       margin: auto;
+   }
+
+   #des-title {
+       margin: 5rem;
+   }
+}
