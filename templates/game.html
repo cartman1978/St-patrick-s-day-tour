@@ -5,7 +5,7 @@
     <br>
     <br>
     <br>
-    <h1 class="text-center" id="text-game">Who Drinks More Beers Game</h1>
+    <h1 class="text-center" style="text-shadow: -2px -2px 0 #FFAD52, 2px -2px 0 #FFAD52, -2px 2px 0 #FFAD52, 2px 2px 0 #FFAD52, -3px 0 0 #FFAD52, 3px 0 0 #FFAD52, 0 -3px 0 #FFAD52, 0 3px 0 #FFAD52; color: #009C5E;" >Who Drinks More Beers Game</h1>
     <br>
     <br>
     <!-- enter participant name -->
@@ -14,17 +14,17 @@
         <form class="form-inline" method="POST" action="{{ url_for('add_player') }}">
             <div class="form-group mx-sm-3 mb-2">
 
-                <input class="form-control" type="text" name="input_new_player" id="input_new_player"
-                    placeholder="Participant's name">
+                <input class="form-control"  type="text" name="input_new_player" id="input_new_player"
+                    placeholder="Participant's name" style="border: 1px solid #FFAD52;">
             </div>
 
             <div class="form-group mx-sm-3 mb-2">
                 <input class="form-control" type="number" name="input_n_drinks" id="input_n_drinks"
-                    placeholder="number of beers" min="0" max="1000" style="width: 160px;">
+                    placeholder="number of beers" min="0" max="1000" style="width: 160px; border: 1px solid #FFAD52;">
             </div>
             <div class="form-group mx-sm-3 mb-2">
 
-                <input class="btn btn-game" type="submit" value="Add Player">
+                <input class="btn btn-game" style="width: 8rem; margin: 1rem;" type="submit" value="Add Player">
             </div>
         </form>
     </section>
@@ -46,7 +46,7 @@
     <br>
     <br>
     <br>
-    <h2 class="text-center">Current Rank</h2>
+    <h2 class="text-center" style="text-shadow: -2px -2px 0 #FFAD52, 2px -2px 0 #FFAD52, -2px 2px 0 #FFAD52, 2px 2px 0 #FFAD52, -3px 0 0 #FFAD52, 3px 0 0 #FFAD52, 0 -3px 0 #FFAD52, 0 3px 0 #FFAD52; color: #009C5E;">Current Rank</h2>
     <section class="mb-5">
 
         <!-- form inline -->
