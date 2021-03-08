@@ -1,4 +1,4 @@
-// Include images
+
 let img_src = [
     'disney-clipart-2.png',
     'disney-clipart-14.png',
@@ -12,7 +12,7 @@ let img_src = [
 let image_type = img_src.map(function(cuurentEl, index) { return "image" + index });
 
 // Configure particles-js
-particlesJS('particles-js', {
+pJS('particles-js', {
     "particles": {
         "number": {
             "value": 80, // No of images
