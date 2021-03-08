@@ -395,3 +395,9 @@ h3 {
        margin: 5rem;
    }
 }
+
+/* Game */
+
+.game-text {
+    color: #e74c3c;
+}
