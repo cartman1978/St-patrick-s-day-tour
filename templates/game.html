@@ -1,55 +1,84 @@
 {% extends "base.html" %}
 {% block content %}
-<div style="margin-top: 200px;">
+<div class="container" style="margin-top: 60px;">
+
+    <br>
+    <br>
+    <br>
+    <h1 class="text-center">Who Drinks More Beers Game</h1>
+    <br>
+    <br>
+    <!-- enter participant name -->
+    <section>
+        <h6>New participant? Enter your name here :</h6>
+        <form class="form-inline" method="POST" action="{{ url_for('add_player') }}">
+            <div class="form-group mx-sm-3 mb-2">
+
+                <input class="form-control" type="text" name="input_new_player" id="input_new_player"
+                    placeholder="Participant's name">
+            </div>
+
+            <div class="form-group mx-sm-3 mb-2">
+                <input class="form-control" type="number" name="input_n_drinks" id="input_n_drinks"
+                    placeholder="number of beers" min="0" max="1000" style="width: 160px;">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+
+                <input class="btn" type="submit" value="Add Player">
+            </div>
+        </form>
+    </section>
+
     <!-- flash messages -->
     <section>
         {% with messages = get_flashed_messages() %}
         <!-- in case there is more than one message, iterate -->
         {% if messages %}
         {% for message in messages %}
-        <div class="row flashes">
-            <h4 class="light-blue lighten-4 center-align">{{ message }}</h4>
+        <div class="mt-5">
+            <h6 class="alert alert-success" role="alert">{{ message }}</h6>
         </div>
         {% endfor%}
         {% endif %}
         {% endwith %}
     </section>
-    <br>
-    <br>
-    <br>
-    <h3>Drinks for the Champ</h3>
-    <br>
-    <br>
-    <!-- enter participant name -->
-    <section>
-        <form method="POST" action="{{ url_for('add_player') }}">
-            <h6>New participant? Enter your name here :</h6>
-            <input type="text" name="input_new_player" id="input_new_player" placeholder="Participant's name">
-            <input type="number" name="input_n_drinks" id="input_n_drinks" placeholder="number of beers" min="0"
-                max="1000">
-            <input type="submit" value="Submit">
-        </form>
-    </section>
     <!-- Load all participants and the number of drinks -->
     <br>
     <br>
     <br>
-    <h5>current rank</h5>
-    <section>
-        
-            {% for player in players_list %}
-            <br>
-            <br>
-            <form>
-            <input type="text" id="name_rank" name="name_rank" value="{{ player.name }}" readonly>
-            <input id="n_drinks_rank" name="n_drinks_rank" type="number" value="{{player.n_drinks}}" min="0" max="1000">
-            <button type="submit" formmethod="POST"
-                formaction="{{ url_for('rank_update_refresh', player_id=player._id)}}">save</button>
-            <a href="{{ url_for('delete_player', player_id=player._id)}}">Delete</a>
-            <br>
-                    </form>
+    <h2 class="text-center">Current Rank</h2>
+    <section class="mb-5">
 
-            {% endfor %}
+        <!-- form inline -->
+
+
+
+        {% for player in players_list %}
+        <br>
+        <br>
+        <form class="form-inline ">
+            <div class="form-group mx-sm-3 mb-2">
+                <input type="text" class="form-control-plaintext form-control-lg" id="name_rank" name="name_rank"
+                    value="{{ player.name }}" readonly>
+            </div>
+
+            <div class="form-group mx-sm-3 mb-2">
+                <input class="form-control form-control-lg" id="n_drinks_rank" name="n_drinks_rank" type="number"
+                    value="{{player.n_drinks}}" min="0" max="1000">
+            </div>
+
+            <div class="form-group mx-sm-3 mb-2">
+                <button class="btn" type="submit" formmethod="POST"
+                    formaction="{{ url_for('rank_update_refresh', player_id=player._id)}}">Save</button>
+            </div>
+
+            <div class="form-group mb-2">
+                <a class="btn" href="{{ url_for('delete_player', player_id=player._id)}}">Delete</a>
+            </div>
+            <br>
+        </form>
+
+        {% endfor %}
     </section>
 </div>
 {% endblock %}
