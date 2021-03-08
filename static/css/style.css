@@ -401,3 +401,8 @@ h3 {
 .game-text {
     color: #e74c3c;
 }
+
+.btn-game {
+    width: 8rem;
+    margin: 1rem;
+}
