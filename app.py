@@ -44,7 +44,7 @@ def add_player():
     if request.method == "POST":
         new_player = {
             "name": request.form.get("input_new_player"),
-            "n_drinks": request.form.get("input_n_drinks")
+            "n_drinks": int(request.form.get("input_n_drinks"))
             }
         mongo.db.players.insert_one(new_player)
         flash("New Player Added")
@@ -65,7 +65,7 @@ def rank_update_refresh(player_id):
     if request.method == "POST":
         updated_n_drinks = {
             "name": request.form.get("name_rank"),
-            "n_drinks": request.form.get("n_drinks_rank")
+            "n_drinks": int(request.form.get("n_drinks_rank"))
         }
         mongo.db.players.update({"_id": ObjectId(player_id)}, updated_n_drinks)
         flash("Player number of drinks have been updated and rank has been refreshed")

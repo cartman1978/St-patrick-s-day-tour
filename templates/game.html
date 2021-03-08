@@ -36,18 +36,20 @@
     <br>
     <h5>current rank</h5>
     <section>
-        <form>
+        
             {% for player in players_list %}
             <br>
             <br>
+            <form>
             <input type="text" id="name_rank" name="name_rank" value="{{ player.name }}" readonly>
             <input id="n_drinks_rank" name="n_drinks_rank" type="number" value="{{player.n_drinks}}" min="0" max="1000">
             <button type="submit" formmethod="POST"
                 formaction="{{ url_for('rank_update_refresh', player_id=player._id)}}">save</button>
             <a href="{{ url_for('delete_player', player_id=player._id)}}">Delete</a>
             <br>
+                    </form>
+
             {% endfor %}
-        </form>
     </section>
 </div>
 {% endblock %}
