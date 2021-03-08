@@ -12,7 +12,7 @@ let img_src = [
 let image_type = img_src.map(function(cuurentEl, index) { return "image" + index });
 
 // Configure particles-js
-pJS('particles-js', {
+particlesJS('particles-js', {
     "particles": {
         "number": {
             "value": 80, // No of images
