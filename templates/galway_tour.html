@@ -12,10 +12,30 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-12">
-      <h1 class="text-center">St Patrick's day in Galway</h1>
+      <h1 class="text-center galway-header">St Patrick's day in Galway</h1>
+      <p class="text-center">Use the navigation buttons to walk the route of the Galway St. Patricks Day Parade</p>
     </div>
 
-    <div id="street-view" class="col-auto mx-auto mt-4"></div>
+
+    <div class="col-12 col-md-6">
+      <img src="{{ url_for('static', filename='images/galway_city.jpg') }}" class="img-fluid rounded img-thumbnail"
+        alt="picture_of_galway_city">
+    </div>
+    <div class="col-12 col-md-6">
+      <p>
+        St Patrick’s Festival Galway is a platform to showcase local artists and community groups. It aims to celebrate
+        the cities diverse culture and talent through an inclusive programme of events. They aim to create a carnival
+        atmosphere that the whole city can be part of and they do.
+
+        The parade has grown from small beginnings to the present day, when on average it has 70,000 spectators
+        thronging the 1.5 mile route. People of all ages mingle together to enjoy the spectacle of music, dance and
+        performance art as the procession winds its way through the city.
+      </p>
+
+    </div>
+
+
+    <div id="street-view" class="col-auto mx-auto mt-4 px-4"></div>
   </div>
   <div class="row py-4">
     <div class="col-auto mx-auto" id="street-view-navigation">
@@ -31,7 +51,8 @@
 
 {% block scripts %}
 
-<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB83vz0asy8DKz2p_DVXg4UMMhRm02NNVE">
-</script>
-<script async defer src="{{ url_for('static', filename='js/streetView.js') }}"></script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB83vz0asy8DKz2p_DVXg4UMMhRm02NNVE&callback=initMap">
+  </script>
+<script src="{{ url_for('static', filename='js/streetView.js') }}"></script>
 {% endblock %}
