@@ -154,21 +154,12 @@ button:focus {
 }
 
 /* style hero image with particlesJS */
-/* ​
-.hero {
+
+ .hero {
     position: relative;
     margin-top: 4.5rem;
-}
+} 
 ​
-#particles-js {
-    width: 100%;
-    background-image: url("../images/disney-clipart-14.png");
-    background-size: cover;
-}
-​
-.particles-js-canvas-el {
-    max-height: 25rem;
-} */
 
 /* Cards */
 
