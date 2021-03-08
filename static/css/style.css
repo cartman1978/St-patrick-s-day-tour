@@ -5,10 +5,10 @@
 
 
 .navbar {
-  background-color: #009C5E;
-   -webkit-box-shadow: 0px 8px 12px -2px #fff;
+    background-color: #009C5E;
+    -webkit-box-shadow: 0px 8px 12px -2px #fff;
     box-shadow: 0px 8px 12px -2px #fff;
-  
+    z-index: 5;
 }
 
 .navbar-brand {
