@@ -1,6 +1,6 @@
 
 let img_src = [
-    'static/images/disney-clipart-2.png',
+    '../disney-clipart-2.png',
     'static/images/disney-clipart-14.png',
     'static/images/disney-clipart-3.gif',
     'static/images/leprechaun.png',
