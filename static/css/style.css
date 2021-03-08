@@ -155,9 +155,30 @@ button:focus {
 
 /* style hero image with particlesJS */
 
- .hero {
-    position: relative;
-    margin-top: 4.5rem;
+.hero {
+   position: relative;
+}
+
+.hero .hero-img {
+  background-size: cover;
+    height: auto;
+    width: 100%;
+    min-height: 58rem;
+    max-height: 88rem;
+    margin-top: -21rem;
+   
+}
+
+.jumbotron {
+    position: absolute;
+    top: 18rem;
+    padding: 0.8rem 1rem;
+    margin: 1rem;
+    border-radius: 1.2rem;
+    background: rgba(238, 227, 227, 0.8);
+    opacity: 0.8;
+    justify-content: center;
+}
 } 
 ​
 
