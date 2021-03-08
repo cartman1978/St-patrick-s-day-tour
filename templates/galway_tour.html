@@ -13,12 +13,11 @@
   <div class="row">
     <div class="col-12">
       <h1 class="text-center galway-header">St Patrick's day in Galway</h1>
-      <p class="text-center">Use the navigation buttons to walk the route of the Galway St. Patricks Day Parade</p>
     </div>
 
 
     <div class="col-12 col-md-6">
-      <img src="{{ url_for('static', filename='images/galway_city.jpg') }}" class="img-fluid rounded img-thumbnail"
+      <img id="galway-town" src="{{ url_for('static', filename='images/galway_city.jpg') }}" class="img-fluid rounded img-thumbnail"
         alt="picture_of_galway_city">
     </div>
     <div class="col-12 col-md-6">
@@ -35,9 +34,11 @@
     </div>
 
 
+    <p class="text-center">Use the navigation buttons to walk the route of the Galway St. Patricks Day Parade</p>
     <div id="street-view" class="col-auto mx-auto mt-4 px-4"></div>
   </div>
   <div class="row py-4">
+
     <div class="col-auto mx-auto" id="street-view-navigation">
       <button id="map-nav-first" type="button" class="btn btn-sm"><i class="fas fa-fast-backward"></i>First</button>
       <button id="map-nav-previous" type="button" class="btn btn-sm"><i
